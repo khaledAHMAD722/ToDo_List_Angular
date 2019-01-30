@@ -1,0 +1,21 @@
+*{
+  text-align: center;
+}
+input{
+  border: none;
+  outline-style: none;
+  text-align: center;
+  font-size: 1em;
+}
+#incomplete-tasks{
+ margin: 0 6% 0 2%;
+}
+.icons i{
+  padding-right: 20px;
+}
+.line{
+  height: 10px;
+  width: 100%;
+  background-color: #249991;
+  opacity: 0.5;
+}

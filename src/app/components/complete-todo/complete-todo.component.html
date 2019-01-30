@@ -1,0 +1,22 @@
+<section *ngIf="todos.length > 0">
+  <ul id="incomplete-tasks" *ngFor="let todo of todos">
+    <li>
+      <input type="checkbox" id="pure-toggle" hidden/>
+      <label class="pure-toggle" for="pure-toggle">
+        <span>
+    <li class="editMode" *ngIf="todo.complete">
+      <input type="text" [(ngModel)]="todo.title">
+      <br>
+      <hr>
+      <label class="icons">
+        <i class="fas fa-eraser fa-2x" (click)="removeTodo(todo)"></i>
+        <i class="fas fa-highlighter fa-2x" (click)="editTodo(todo)"></i>
+      </label>
+      <br>
+      <hr>
+    </li>
+    </span>
+    </label>
+    </li>
+  </ul>
+</section>
